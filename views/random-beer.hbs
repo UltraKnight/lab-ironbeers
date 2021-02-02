@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row mt-3">
+        {{> beersCard beer}}
+        <div class="col-md-6 pt-5">
+            <h4>Food pairing</h4>
+            <ul>
+                {{#each beer.food_pairing}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <h4>Brewers tips</h4>
+            <p>{{beer.brewers_tips}}</p>
+        </div>
+    </div>
+</div>
